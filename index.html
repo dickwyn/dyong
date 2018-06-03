@@ -5,25 +5,34 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Dickwyn's Homepage</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
     <style type="text/css">
         body {
             font-family: Arial;
         }
+        .container-summary {
+            display: grid;
+            grid-template-columns: 238px 84%;
+        }
+        .summary-img {
+            padding: 1em;
+        }
+        .role {
+            padding-bottom: 0.1em;
+        }
+        @media screen and (max-width: 640px) {
+            .container-summary {
+                grid-template-columns: 1fr 1fr;
+            }
+            .summary-img {
+                justify-self: center;
+                grid-column: span 2;
+            }
+            .summary-text {
+                grid-column: span 2;
+            }
+        }
     </style>
-
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -36,87 +45,90 @@
             a.src = g;
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
         ga('create', 'UA-64177134-2', 'auto');
         ga('send', 'pageview');
     </script>
-
 </head>
 
 <body>
-
-    <table cellpadding=15>
-        <td>
-            <img src="dickwyn.png" alt="dickwyn-photo" width=200 height=200/><br>
-        </td>
-        <td>
+    <div class="container-summary">
+        <div class="summary-img">
+            <img src="dickwyn.png" alt="dickwyn-photo" width=200 height=200/>
+        </div>
+        <div class="summary-text">
             <h2>Dick Wyn Yong</h2>
             <p>Computer Science (B.S.) student <a href="https://cidse.engineering.asu.edu/">School of Computing, Informatics, and Decision Systems Engineering</a> at <a href="http://www.asu.edu">Arizona State University</a>.</p>
-            <p><b><a href="resume-v7.pdf" target="_blank">Resume</a></b>, <b><a href="https://blog.dickwyn.xyz/" target="_blank">Blog</a></b>, <b><a href="https://www.dickwyn.xyz/" target="_blank">Website</a></b>.</p>
+            <p><b><a href="https://isearch.asu.edu/profile/2684472/cv" target="_blank">Resume</a></b>, <b><a href="https://blog.dickwyn.xyz/" target="_blank">Blog</a></b>, <b><a href="https://www.dickwyn.xyz/" target="_blank">Website</a></b>.</p>
             <p><b>Research interests</b>: Social Media, Human-Computer Interation, Mobile Computing</p>
             <p><b>Contact info</b>: <a href="mailto:dickwyn@asu.edu">Email</a>, <a href="https://www.linkedin.com/in/dickwyn" target="_blank">LinkedIn</a>.</p>
-        </td>
-    </table>
+        </div>
+    </div>
     <hr>
-
-    <h3>Experience</h3>
-
-    <h4>Student Facilitator (current)</h4>
-    <p><i>Sun Devil Civility at EOSS MOSAIC</i></p>
-    <p>Facilitating positive growth through ASU's new initiative under the Sun Devil Civility umbrella.</p>
-    <p>Learn more at <a href="https://eoss.asu.edu/sdc" target="_blank">eoss.asu.edu/sdc</a></p>
-
-    <h4>Net Zero Ambassador (current)</h4>
-    <p><i>ASU Student Pavilion</i></p>
-    <ul>
-        <li>Understanding the social environmental, and economic challenges to energy-use reduction, water conservation and waste diversion.
-        </li>
-        <li>
-            Leverage tools to empower other peers to become a green champion. 
-        </li>
-    </ul>
-        <p>Learn more at <a href="https://eoss.asu.edu/student-pavilion/net-zero" target="_blank">eoss.asu.edu/student-pavilion/net-zero</a></p>
     
-    <h4>Vice President</h4>
-    <p><i>Arizona State University Coalition of International Students</i></p>
-    <ul>
-        <li>
-            Coordinated International Night for 3,500 participants to promote understanding among various cultures within the university.
-        </li>
-        <li>
-            Supervise internal operations such as member welfare, team collaboration and decision making
-        </li>
-    </ul>
-    <p>Learn more at <a href="https://www.asucis.com" target="_blank">asucis.com</a></p>
-
-        <h4>Undergraduate Teaching Assistant</h4>
-        <p><i>Ira A. Fulton Schools of Engineering</i></p>
-        <p>Assisting faculty in guiding students with coursework.</p>
-        <ul>
-            <li><b>Fall 2016</b>: EEE/CSE 120: Introduction to Digital Logic with Professor <a href="http://mre.faculty.asu.edu/" target="_blank">Martin Reisslein</a></li>
-            <li><b>Spring 2017</b>: FSE 100: Introduction to Engineering with Professor <a href="https://cidse.engineering.asu.edu/directory/meuth-ryan/" target="_blank">Ryan Meuth</a></li>
-            <li><b>Fall 2017</b>: FSE 100: Introduction to Engineering with Instructor <a href="https://cidse.engineering.asu.edu/directory/miller-phill/" target="_blank">Phillip Miller</a></li>
-        </ul>
-        <p>Learn more at <a href="https://engineering.asu.edu/ugta/" target="_blank">engineering.asu.edu/ugta</a></p>
-
-        <h4>Marketing Coordinator</h4>
-        <p><i>Arizona State University Coalition of International Students</i></p>
-        <p>Handle marketing and digital front of the coalition</p>
-        <p>Learn more at <a href="https://eoss.asu.edu/student-engagement/international/CIS" target="_blank">eoss.asu.edu/cis</a></p>
-
-        <h4>Public Relations Coordinator</h4>
-        <p><i>Arizona State University Malaysian Students Association</i></p>
-        <p></p>
-
-        <h4>E2 Camp Counselor</h4>
-        <p><i>Ira A. Fulton Schools of Engineering</i></p>
-        <p>Lead groups of freshman students through various activites to show them the various resources available.</p>
-        <p>Learn more at <a href="https://e2.engineering.asu.edu/" target="_blank">e2.engineering.asu.edu</a></p>
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
+    <div class="container">
+        <h2>Experience</h2>
+        <div class="role current">
+            <h4>Student Facilitator @ <i>Student &amp; Cultural Engagement</i> (current)</h4>
+            <ul>
+                <li>Facilitate positive growth and civility among fellow Arizona State University students and communities through diversity &amp; inclusion workshops as part of the newly formed cultural competency effort titled Sun Devil Civility.</li>
+                <li>Develop and update curriculum for new and existing workshops that support the Sun Devil Way. Topics include conflict management, cultural adjustment and intersectionality of sex, gender &amp; sexuality.</li>
+            </ul>
+            <p>
+                Learn more at <a href="https://eoss.asu.edu/sdc" target="_blank">eoss.asu.edu/sdc</a>
+            </p>
+            <p>
+        </div>
+        <div class="role current">
+            <h4>Net Zero Ambassador @ <i>Student Pavilion</i> (current)</h4>
+            <p></p>
+            <ul>
+                <li>Understanding the social environmental, and economic challenges to energy-use reduction, water conservation and waste diversion.</li>
+                <li>Leverage tools to empower other peers to become a green champion.</li>
+            </ul>
+            <p>Learn more at <a href="https://eoss.asu.edu/student-pavilion/net-zero" target="_blank">eoss.asu.edu/student-pavilion/net-zero</a></p>
+        </div>
+        <div class="role current">
+            <h4>Global Guide @ <i>International Student Engagement</i> (current)</h4>
+            <p></p>
+            <ul>
+                <li>Mentor incoming international students on surviving their first semester as an ASU student by connecting them with campus resources.</li>
+                <li>Leverage tools to empower other peers to become a green champion.</li>
+            </ul>
+            <p>Learn more at <a href="https://eoss.asu.edu/student-engagement/international/globalguides" target="_blank">eoss.asu.edu/student-engagement/international/globalguides</a></p>
+        </div>
+        <div class="role">
+            <h4>Vice President @ <i>Coalition of International Students</i></h4>
+            <ul>
+                <li>Coordinate 58 student leaders within coalition to host 5 large-scale events that celebrated culture from all around the world that collectively engaged over 6,000 students throughout the academic year.</li>
+                <li>Supervise internal operations such as team collaboration, decision making and member welfare.</li>
+            </ul>
+            <p>Learn more at <a href="https://www.asucis.com" target="_blank">asucis.com</a></p>
+        </div>
+        <div class="role">
+            <h4>Undergraduate Teaching Assistant @ <i>Ira A. Fulton Schools of Engineering</i></h4>
+            <ul>
+                <li>Assist faculty in guiding students with coursework.</li>
+                <li><b>Fall 2016</b>: EEE/CSE 120: Introduction to Digital Logic with Professor <a href="http://mre.faculty.asu.edu/" target="_blank">Martin Reisslein</a></li>
+                <li><b>Spring 2017</b>: FSE 100: Introduction to Engineering with Professor <a href="https://cidse.engineering.asu.edu/directory/meuth-ryan/" target="_blank">Ryan Meuth</a></li>
+                <li><b>Fall 2017</b>: FSE 100: Introduction to Engineering with Instructor <a href="https://cidse.engineering.asu.edu/directory/miller-phill/" target="_blank">Phillip Miller</a></li>
+            </ul>
+            <p>Learn more at <a href="https://engineering.asu.edu/ugta/" target="_blank">engineering.asu.edu/ugta</a></p>
+        </div>
+        <div class="role">
+            <h4>Marketing Coordinator @ <i>Coalition of International Students</i></h4>
+            <p></p>
+            <p>Handle marketing and digital front of the coalition</p>
+        </div>
+        <div class="role">
+            <h4>Public Relations Coordinator @ <i>Malaysian Students Association</i></h4>
+            <p>Act as liason between external affairs of the club.</p>
+        </div>
+        <div class="role">
+            <h4>E2 Camp Counselor @ <i>Ira A. Fulton Schools of Engineering</i></h4>
+            <p>Lead groups of freshman students through various activites to show them the various resources available.</p>
+            <p>Learn more at <a href="https://e2.engineering.asu.edu/" target="_blank">e2.engineering.asu.edu</a></p>
+        </div>
+    </div>
 </body>
 
 </html>
